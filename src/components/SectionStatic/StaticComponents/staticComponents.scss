@@ -1,0 +1,65 @@
+
+
+.static-desc
+{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media (max-width: 1044px) {
+        max-width: 1000px;
+    }
+
+    @media (max-width: 450px) {
+        max-width: 450px;
+    }
+
+    h1, p, span
+    {
+        color: #24160B;
+        font-weight: 400;
+    }
+
+    &_title
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+
+        h1
+        {
+            font-size: 44px;
+        }
+
+        p
+        {
+            font-size: 18px;
+            line-height: 31px;
+        }
+    }
+
+    &_percent
+    {
+        h1
+        {
+            font-size: 58px;
+        }
+    }
+
+    &_source
+    {
+        p
+        {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        span
+        {
+            font-size: 10px;
+        }
+    }
+
+}

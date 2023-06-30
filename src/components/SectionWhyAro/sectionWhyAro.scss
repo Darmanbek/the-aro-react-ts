@@ -1,0 +1,44 @@
+.section-why-aro
+{
+    padding: 100px 0;
+
+    .why-aro-inner
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+
+        .why-aro-title
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+
+            h1
+            {
+                font-size: 60px;
+                color: #24160B;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+
+            p
+            {
+                font-size: 13px;
+                font-weight: 400;
+                color: #24160B;
+            }
+        }
+
+        .why-aro-pluses
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+    }
+}

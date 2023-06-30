@@ -1,0 +1,119 @@
+.section-intro
+{
+    .intro-inner
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        padding: 90px;
+
+        @media (max-width: 1044px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 658px) {
+            padding: 90px 30px;
+        }
+
+        .intro-desc
+        {
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @media (max-width: 1044px) {
+                max-width: none;
+            }
+
+
+            h1, p, button, a
+            {
+                color: #24160b;
+                font-weight: 400;
+            }
+
+            &_title
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+
+                h1
+                {
+                    font-size: 60px;
+                    text-transform: capitalize;
+                    margin: 0;
+
+                    @media (max-width: 1044px) {
+                        font-size: 48px;
+                    }
+
+                    @media (max-width: 658px) {
+                        font-size: 36px;
+                        text-align: center;
+                    }
+
+                    @media (max-width: 429px) {
+                        font-size: 32px;
+                    }
+                }
+    
+                p
+                {
+                    font-size: 18px;
+                    color: #24160b;
+                    margin: 0;
+                    line-height: 31px;
+
+                    @media (max-width: 658px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 441px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &_buttons
+            {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 24px;
+
+                button
+                {
+                    font-size: 16px;
+
+                    @media (max-width: 658px) {
+                        font-size: 14px;
+                    }
+
+                    @media (max-width: 467px) {
+                        font-size: 12px;
+                    }
+                }
+
+                a
+                {
+                    @media (max-width: 658px) {
+                        font-size: 14px;
+                    }
+
+                    @media (max-width: 467px) {
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

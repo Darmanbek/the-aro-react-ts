@@ -1,0 +1,71 @@
+.sectoin-video
+{
+    background: url("../../assets/section-video/IMAGE.png") no-repeat center / cover fixed;
+    min-height: 800px;
+
+    .video-inner
+    {
+        padding: 90px;
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 35px;
+
+        h1
+        {
+            color: #fff;
+            font-size: 58px;
+            font-weight: 400;
+        }
+
+        p
+        {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .video-button
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+
+            button
+            {
+                cursor: pointer;
+                width: 128px;
+                height: 128px;
+                background-color: #fff;
+                font-size: 28px;
+
+                &:active
+                {
+                    filter: brightness(0.9);
+                }
+            }
+
+            .video-duration
+            {
+                h2
+                {
+                    font-size: 39px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #fff;
+                }
+
+                span
+                {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}

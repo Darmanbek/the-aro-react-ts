@@ -1,0 +1,120 @@
+.header
+{
+    transition: transform .3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .5);
+
+    &.hide
+    {
+        transform: translateY(-100%);
+    }
+    
+    &.fixed
+    {
+        transform: translateY(0);
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .header-inner
+    {
+        .header-nav
+        {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 15px 90px;
+
+            @media (max-width: 926px) {
+                justify-content: center;
+                padding: 15px 0px;
+            }
+
+            .nav-items
+            {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 32px;
+
+                @media (max-width: 865px) {
+                    justify-content: center;
+                    gap: 20px;
+                }
+
+                @media (max-width: 450px) {
+                    justify-content: center;
+                    gap: 12px;
+                }
+                
+                a, button
+                {
+                    font-size: 17px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+
+                    @media (max-width: 688px) {
+                        font-size: 14px;
+                    }
+
+                    @media (max-width: 604px) {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    @media (max-width: 550px) {
+                        font-size: 10px;
+                    }
+
+                    // @media (max-width: 726px) {
+                    //     font-size: 10px;
+                    //     text-align: center;
+                    // }
+
+                }
+
+                button
+                {
+                    @media (max-width: 604px) {
+                        padding: 7px 10px;
+                    }
+                }
+
+                button.lang
+                {
+                    cursor: pointer;
+                    padding: 5px 7px;
+                    transition: transform .3s;
+
+                    &:hover
+                    {
+                        outline: 1px solid rgba(0, 0, 0, .5);
+                        border-radius: 10px;
+                    }
+
+                    &:active
+                    {
+                        transform: scale(0.9);
+                    }
+
+                    span.active
+                    {
+                        color: #EFAE35;
+                    }
+                }
+
+                a
+                {
+                    color: #222;
+                    border-bottom: 1px solid transparent;
+                    padding: 5px 0;
+
+                    &:hover
+                    {
+                        border-bottom: 1px solid #222;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.section-smart
+{
+    .smart-inner
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1
+        {
+            font-size: 92px;
+            font-weight: 400;
+            color: #000;
+            text-align: center;
+        }
+
+        .smart-title
+        {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            p
+            {
+                font-size: 18px;
+                font-weight: 400;
+                color: #24160B;
+            }
+        }
+
+        .smart-desc
+        {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

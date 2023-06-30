@@ -1,0 +1,22 @@
+.section-get-started
+{
+    background: url("../../assets/section-get-started/IMAGE.png") no-repeat center / cover fixed;
+
+    .get-started-inner
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 570px;
+        height: 100%;
+
+        .get-started_buttons
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

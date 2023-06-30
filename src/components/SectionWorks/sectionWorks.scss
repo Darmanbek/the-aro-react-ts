@@ -1,0 +1,18 @@
+
+.section-experience,
+.section-app,
+.section-home-device
+{
+    padding: 50px 0;
+
+    .experience-inner,
+    .app-inner,
+    .home-device-inner
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+}

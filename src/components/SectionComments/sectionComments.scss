@@ -1,0 +1,12 @@
+.section-comments
+{
+    background-color: #24160B;
+    padding: 45px 0;
+    
+    .comments-inner
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+    }
+}

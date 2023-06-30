@@ -1,0 +1,46 @@
+
+
+.works-desc
+{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    &_title
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 28px;
+
+        h1
+        {
+            font-size: 43px;
+            font-weight: 400;
+            color: #24160b;
+            text-transform: capitalize;
+        }
+
+        P
+        {
+            font-size: 18px;
+            font-weight: 400;
+            color: #24160b;
+            line-height: 30px;
+        }
+
+    }
+
+    &_link
+    {
+        a
+        {
+            color: #24160b;
+            font-size: 17px;
+            font-weight: 400;
+        }
+    }
+
+}

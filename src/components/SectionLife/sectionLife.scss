@@ -1,0 +1,65 @@
+.section-life
+{
+    .life-inner
+    {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        gap: 10px;
+
+        .life-images
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        
+            img
+            {
+                width: 100%;
+            }
+        }
+
+        .life-happens
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            background: url("../../assets/section-life/IMAGE3.png") no-repeat center / cover;
+
+            &_title
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 420px;
+                gap: 25px;
+
+                h1
+                {
+                    font-size: 60px;
+                    font-weight: 400;
+                    color: #fff;
+                    text-align: center;
+                }
+
+                p
+                {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+
+            &_button
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}
